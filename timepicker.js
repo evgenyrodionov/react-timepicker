@@ -133,7 +133,7 @@ Timepicker.Info = React.createClass({
             React.createElement(
                 'span',
                 {
-                    className: 'timepicker-info-digits' + (mode === Timepicker.HOURS ? ' active' : ''),
+                    className: 'timepicker-info-digits' + (mode === Timepicker.HOURS ? ' timepicker-info-digits-active' : ''),
 
                     onClick: this.onClickHours
                 },
@@ -143,7 +143,7 @@ Timepicker.Info = React.createClass({
             React.createElement(
                 'span',
                 {
-                    className: 'timepicker-info-digits' + (mode === Timepicker.MINUTES ? ' active' : ''),
+                    className: 'timepicker-info-digits' + (mode === Timepicker.MINUTES ? ' timepicker-info-digits-active' : ''),
 
                     onClick: this.onClickMinutes
                 },

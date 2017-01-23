@@ -89,7 +89,7 @@ var Timepicker = React.createClass({
         this.setState({ hours: hours, minutes: minutes });
 
         if (this.props.onChange) {
-            this.props.onChange(hours, minutes);
+            this.props.onChange(this.props.formatNumber(hours), this.props.formatNumber(minutes));
         }
     },
 

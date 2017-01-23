@@ -343,7 +343,7 @@ Timepicker.Clock = React.createClass({
                 {
                     key: index,
 
-                    className: 'timepicker-bubble' + (hours === hour ? ' active' : ''),
+                    className: 'timepicker-bubble' + (hours === hour ? ' timepicker-bubble-active' : ''),
 
                     onClick:     onClick,
                     onMouseUp:   onMouseMove,
@@ -388,7 +388,7 @@ Timepicker.Clock = React.createClass({
                 {
                     key: minute,
 
-                    className: 'timepicker-bubble' + (minute % 5 !== 0 ? ' small' : '') + (minutes === minute ? ' active' : ''),
+                    className: 'timepicker-bubble' + (minute % 5 !== 0 ? ' timepicker-bubble-small' : '') + (minutes === minute ? ' timepicker-bubble-active' : ''),
 
                     onClick:     onClick,
                     onMouseMove: onMouseMove

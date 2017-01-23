@@ -137,7 +137,7 @@ Timepicker.Info = React.createClass({
 
                     onClick: this.onClickHours
                 },
-                formatNumber(hours, 'info')
+                hours
             ),
             ':',
             React.createElement(
@@ -147,7 +147,7 @@ Timepicker.Info = React.createClass({
 
                     onClick: this.onClickMinutes
                 },
-                formatNumber(minutes, 'info')
+                minutes
             )
         );
     },
